@@ -104,17 +104,16 @@
     
     
     .homepage{
-        position: absolute;
+        position:absolute;
         z-index: 1;
-        top: 150px;
-        width:80%;
-        left:10%;
-        right:10%;
+        top: 120px;
+        width:90%;
+        left:5%;
+        right: 5%;
     }
     .homepage>p{
         text-align: justify;
-        line-height: 25px;
-        font-weight: 520;
+        font-weight: 300;
         font-size: 1rem;
         font-family: serif;
     }
