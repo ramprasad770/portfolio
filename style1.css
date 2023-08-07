@@ -212,12 +212,16 @@
       justify-content: space-evenly;
     }
 
-    .hamburger{
+    .hamburger_menu{
         display: flex;
         height:80px;
         justify-content: center;
         align-items: end;
         flex-direction: column;
+    }
+    .hamburger{
+        transition: all 0.5s;
+        cursor: pointer;
     }
     .line{
         width:30px;
@@ -227,6 +231,7 @@
         background-color:black;
     }
     .drop-menu{
+        display: none;
         text-align: center;
         margin-top: 80px;
         position: absolute;
@@ -234,12 +239,27 @@
         left:0;
         background-color:lightgray;
         height:0;
-        overflow: hidden;
-    }
-    .drop-menu.active{
         width:100%;
         height:100vh;
+        overflow: hidden;
     }
 
-  
+    .cross_menu{
+        display: none;
+        height:80px;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    .cross{
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .cross>p{
+        font-weight: 900;
+        font-size: xx-large;
+        font-family: Arial;
+    }
+
 }

@@ -193,7 +193,7 @@
     .logos{
       justify-content: space-evenly;
     }
-    .hamburger,.drop-menu{
+    .hamburger_menu,.drop-menu,.cross_menu{
         display: none;
     }
 }

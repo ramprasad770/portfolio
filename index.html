@@ -21,10 +21,18 @@
                 <li><a href="#About">About</a></li>
               </ul>
             </div>
-            <div class="hamburger">
+           <div class="hamburger_menu">
+            <div class="hamburger" onclick="hamburger()">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
+            </div>
+           </div>
+
+            <div class="cross_menu">
+                <div class="cross" onclick="cross()">
+                    <p>X</p>
+                </div>
             </div>
 
             <div class="drop-menu">
@@ -64,10 +72,10 @@
         <div class="footer_right1">
             <h3>Follow us:</h3>
            <div class="logos">
-            <a href=""><img src="./logos/blog.ico" alt="blog"></a>
-            <a href=""><img src="./logos/youtube.ico" alt="YouTube"></a>
-            <a href=""><img src="./logos/linkedin.ico" alt="linkedin"></a>
-            <a href=""><img src="./logos/github.ico" alt="github"></a>
+            <a href="https://hackersplay420.blogspot.com/"><img src="./logos/blog.ico" alt="blog"></a>
+            <a href="https://www.youtube.com/@ram_143"><img src="./logos/youtube.ico" alt="YouTube"></a>
+            <a href="https://www.linkedin.com/in/ram0"><img src="./logos/linkedin.ico" alt="linkedin"></a>
+            <a href="https://www.github.com/ramprasad770"><img src="./logos/github.ico" alt="github"></a>
            </div>
         </div>
     </div>
@@ -77,15 +85,30 @@
     </div>
 
     <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function(){
-            dropMenu=document.querySelector(".drop-menu");
-            dropMenu.classList.toggle("active");
+        function hamburger(){
+        let hamburger1 = document.querySelector(".hamburger_menu");
+        let cross1 = document.querySelector(".cross_menu");
+        let menu = document.querySelector(".drop-menu");
+        hamburger1.style.display="none";
+        cross1.style.display="flex";
+        menu.style.display="block";
+
         }
+
+        function cross(){
+        const hamburger1 = document.querySelector(".hamburger_menu");
+        let cross1 = document.querySelector(".cross_menu");
+        let menu = document.querySelector(".drop-menu");
+        hamburger1.style.display="flex";
+        cross1.style.display="none";
+        menu.style.display="none";
+        }
+
         function link_activated(){
-            dropMenu=document.querySelector(".drop-menu");
-            dropMenu.classList.toggle("active");
+            cross();
         }
+
+
     </script>
 </body>
 </html>
