@@ -360,9 +360,9 @@
     }
     .home_main{
         width:80%;
+        height: min-content;
         margin-left: 10%;
         margin-right: 10%;
-        line-height: 100%;
     }
     .bg1>.home_main>h1{
         text-align: center;
